@@ -1,0 +1,18 @@
+function compressFirstBox(boxes) {
+	console.log(boxes[0]) //O(1) - first operation
+}
+
+//O(1) - Constant Time - always runs one operation
+
+const boxes = [0, 1, 2, 3, 4, 5]
+
+function logFirstTwoBoxes(boxes) {
+	console.log(boxes[0]) //O(1) - first operation
+	console.log(boxes[1]) //O(1) - second operation
+}
+
+logFirstTwoBoxes(boxes)
+
+//O(2) - Constant Time - always runs two operations
+// we always call this O(1) no matter how many operations it runs as it is always 
+// use constant amount of time
