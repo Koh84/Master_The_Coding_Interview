@@ -18,7 +18,7 @@ function compressBoxesTwrice(boxes, boxes2) {
 	})
 	
 	boxes2.forEach(function(boxes2) {
-		console.log(boxes) 
+		console.log(boxes2) 
 	})
 }
 
@@ -27,3 +27,15 @@ function compressBoxesTwrice(boxes, boxes2) {
 //because each of them can differ in size greatly
 //also, the for loop loops through different input variables
 //O(a + b) 
+
+
+//but what if we have 2 arguments that is nested
+
+function compressBoxesTwrice(boxes, boxes2) {
+	boxes.forEach(function(boxes, i) {
+		boxes2.forEach(function(boxes2, j) {
+			console.log(boxes[i], boxes2[j]) 
+		})
+	})
+}
+//O(a * b) 
