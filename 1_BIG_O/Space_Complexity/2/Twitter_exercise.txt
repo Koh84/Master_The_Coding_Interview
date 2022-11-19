@@ -1,0 +1,46 @@
+Let says ur boss ask you to write a code
+to find the first and last tweet in an account
+so how do we analyse time space complexity
+
+what we need to know and what we know
+//find 1st and Nth element
+//we don't know how the database the these tweets
+//let say the tweets are store in an array
+const array = ['hi', 'my', 'teddy']
+let says array[0] is the oldest tweet 		from https://www.bigocheatsheet.com/ we know for array, time complxity is ---> O(1)
+and let says array[2] is the latest tweet	from https://www.bigocheatsheet.com/ we know for array, time complxity is ---> O(1)
+
+so a total of O(2) which is O(1) time complexity
+
+Now our boss come back, and want us to compare the date between each tweet
+const array = [
+	{
+		tweet: 'hi',
+		date: 2022
+	}, 
+	{
+		tweet: 'my',
+		date: 2014
+	}, 
+	{
+		tweet: 'teddy',
+		date: 2018
+	}
+]
+
+what is the big o of this operation? 
+because we comparing each element of the array to the other,
+so this will be a nested for loops hence let says time complexity is O(n^2)
+so we need to tell our boss that we might need to do sometime special as this is going to take more time
+so maybe we want to store the value somewhere to speed up the time
+
+
+'asbckdlikjlskwoslkjg'.length <--- what is the big O notation of this? A function to calculate the length of the string.
+The answer to this is that it depends on the programming language you are using.
+What is the method behind the code. We need to analyse that.
+Take javascript for an example, the string is an object, each object come with an attribute of length,
+hence, it is O(1).
+
+Summary, O(n) is not necessary better than O(n^2), because maybe time is less important that space complexity in your
+application. Also, maybe code readability is more important that code scalability. You need to know what is best for your application
+and what your company wants.

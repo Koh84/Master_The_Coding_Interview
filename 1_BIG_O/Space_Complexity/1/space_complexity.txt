@@ -1,0 +1,31 @@
+function booo(n) {
+	for(let i=0; i<n.length; i++) {
+		console.log('boo');
+	}
+}
+
+boo([1,2,3,4,5])
+
+//We don't have a control on the input
+//we only have control over what is inside the function
+//did we add more memory in our function? NO.
+//Space complexity is O(1)
+//we created variable i but we can ignore this
+
+function arrayOfHiNTimes(n) {
+	let hiArray = [];
+	
+	for(let i=0; i<n; i++) {
+		hiArray[i] = 'hi';
+	}
+	return hiArray;	
+}
+
+arrayOfHiNTimes(6);
+//did we add more memory in our function? YES.
+//Space complexity is O(n)
+//we created variable i but we can ignore this
+//we created datastructure hence the O(n)
+
+
+//Sometimes there is a tradeoff between saving time vs saving space
